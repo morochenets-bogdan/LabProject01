@@ -1,0 +1,14 @@
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.AssemblyInfoInputs.cache
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.AssemblyInfo.cs
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/bin/Debug/net9.0/LabProject01
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/bin/Debug/net9.0/LabProject01.deps.json
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/bin/Debug/net9.0/LabProject01.runtimeconfig.json
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/bin/Debug/net9.0/LabProject01.dll
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/bin/Debug/net9.0/LabProject01.pdb
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.dll
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/refint/LabProject01.dll
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.pdb
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.genruntimeconfig.cache
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/ref/LabProject01.dll
