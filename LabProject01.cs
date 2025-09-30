@@ -1,52 +1,38 @@
 ﻿using System;
 
-namespace RhombusAreaCalculator
+class Sphere
 {
-    class Program
+    public double X, Y, Z, R;
+
+    public Sphere(double x, double y, double z, double r)
     {
-        static void Main()
-        {
-            // Виведення заголовку програми
-            Console.WriteLine("===============================================");
-            Console.WriteLine("    Калькулятор площі ромба за діагоналями    ");
-            Console.WriteLine("===============================================");
-            Console.WriteLine("Формула: S = (l * f) / 2");
-            Console.WriteLine("де l та f - діагоналі ромба\n");
-            
-            double l, f;
-            
-            // Введення першої діагоналі з перевіркою
-            Console.Write("Введіть першу діагональ (l): ");
-            while (!double.TryParse(Console.ReadLine(), out l) || l <= 0)
-            {
-                Console.WriteLine("Помилка! Введіть додатне число.");
-                Console.Write("Введіть першу діагональ (l): ");
-            }
-            
-            // Введення другої діагоналі з перевіркою
-            Console.Write("Введіть другу діагональ (f): ");
-            while (!double.TryParse(Console.ReadLine(), out f) || f <= 0)
-            {
-                Console.WriteLine("Помилка! Введіть додатне число.");
-                Console.Write("Введіть другу діагональ (f): ");
-            }
-            
-            // Розрахунок площі ромба
-            double area = (l * f) / 2;
-            
-            // Виведення результатів
-            Console.WriteLine("\n=============== РЕЗУЛЬТАТ ===============");
-            Console.WriteLine($"Перша діагональ (l):  {l}");
-            Console.WriteLine($"Друга діагональ (f):  {f}");
-            Console.WriteLine($"Площа ромба (S):      {area:F2} кв. од.");
-            Console.WriteLine("=========================================");
-            
-            // Додаткова інформація
-            Console.WriteLine("\nФормула розрахунку:");
-            Console.WriteLine($"S = (l × f) / 2 = ({l} × {f}) / 2 = {area:F2}");
-            
-            Console.WriteLine("\nНатисніть будь-яку клавішу для завершення...");
-            Console.ReadKey();
-        }
+        X = x; Y = y; Z = z; R = r;
+    }
+
+    public bool Contains(double x, double y, double z)
+    {
+        double dx = x - X, dy = y - Y, dz = z - Z;
+        return dx * dx + dy * dy + dz * dz <= R * R;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введіть центр кулі (x y z): ");
+        var c = Array.ConvertAll(Console.ReadLine().Split(), double.Parse);
+
+        Console.Write("Введіть радіус: ");
+        double r = double.Parse(Console.ReadLine());
+
+        Sphere s = new Sphere(c[0], c[1], c[2], r);
+
+        Console.Write("Введіть точку (x y z): ");
+        var p = Array.ConvertAll(Console.ReadLine().Split(), double.Parse);
+
+        Console.WriteLine(s.Contains(p[0], p[1], p[2])
+            ? "Точка попадає в кулю"
+            : "Точка не попадає в кулю");
     }
 }

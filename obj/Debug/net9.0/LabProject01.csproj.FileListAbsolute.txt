@@ -12,3 +12,4 @@
 /Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.pdb
 /Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.genruntimeconfig.cache
 /Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/ref/LabProject01.dll
+/Users/mac/Desktop/С# лабораторні ООП/LabProject01/obj/Debug/net9.0/LabProject01.sourcelink.json
